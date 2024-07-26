@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Приложение "ЗАГС в ВК"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Приложение с возможностью создания "Шуточного заявления о регистрации брака" 📝. Пользователь может заполнить заявление через удобный интерфейс. Созданным свидетельством можно делиться:
 
-Currently, two official plugins are available:
+- В личных сообщениях 💌
+- На стене пользователя 🖼️
+- В истории 🕒
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Для владельца приложения реализована "Админ панель" с следующими возможностями:
 
-## Expanding the ESLint configuration
+- Установка подписки на группу или личные сообщения группы для каждой страницы, только после этого разрешается переход на следующую страницу 🚦
+- Регулировка чекбоксов на странице с доступами ⚙️
+- Указание аватара, названия и ссылки на группу, чтобы пользователь мог на нее подписаться 📎
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Используемые технологии
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- TypeScript
+- MobX
+- React Router
+- mantine
+- Vite
+- Axios
+- VK API
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+# Инструкция по установке и запуску приложения
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Клонируйте проект: `https://github.com/your-github-username/marriage-registration`
+- Установите зависимости: `yarn install or npm install`
+- Запустите проект: `yarn dev or npm run dev`
+
+## Подробнее про Vite
